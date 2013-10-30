@@ -1,0 +1,6 @@
+order deny,allow
+AuthUserFile /var/safe/.htpasswd
+AuthGroupFile /dev/null
+AuthType Basic
+AuthName "Login"
+Require valid-user
