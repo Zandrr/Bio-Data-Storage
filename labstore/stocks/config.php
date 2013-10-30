@@ -1,24 +1,5 @@
 <?php
-/*
 
-LabStoRe 1.4 - Configuration
-----------------------------
-
-Set up MySQL account and database first
-
-Use a plain text or code editor (not MS Word)
-
-Be careful about the commas, quotes, slashes, etc.
-
-Three sections:
- Essential - you must change or fill the values between ''
- Customizable
- Authorization - read readme.txt to understand implementation
- Change not suggested
-
-*/
-
-////---------------ESSENTIAL------------- ////
 
 ////--- MySQL
 
@@ -49,15 +30,7 @@ $site_url = 'http://biof-test.colorado.edu/dna_cat/labstore/stocks/interface_cre
 // Path to the 'uploads' folder inside interface_creator; make sure the webserver can write in this folder; also, the temporary upload folder used by PHP (depends on php.ini file used by PHP) should also be writable (usually it is so). Please put slash (/) at the end. This may be different in Windows systems - e.g. 'c:\\data\\web\\dadabik\\uploads\\' on windows systems
 $upload_directory = '/var/www/html/dna_cat/labstore/stocks/interface_creator/uploads/';
 
-////---------------CUSTOMIZABLE------------- ////
 
-// Enable modules here. See readme.txt if you want to add a new module
-// Modules are enabled by storing these values for the module in the modules_array. E.g.,
-// 'category' => array('name','plural of name','types of items,''php file for the category', 'MySQL table name'),
-// Such as, for the PROTEINS module,
-// 'protein'=>array('Proteins','Proteins','antibody, enzyme, lectin, purified proteins, etc.','proteins.php','proteins'),
-// Note the commas, brackets, quote marks'
-// To inactivate, put doubleslashes (//) at front of the line for the module
 
 $modules_array = array(
 
